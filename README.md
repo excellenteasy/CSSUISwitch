@@ -13,7 +13,7 @@ CSSUISwitch is a recreation of iOS's UISwitch with web technologies for use in w
 
 # Usage
 
-You can just throw `build/CSSUISwitch.css` into your project and use the following HTML:
+You can just throw `build/CSSUISwitch.css` into your project, or `bower install CSSUISwitch` and use the following HTML:
 ```html
 <div class="input-switch">
   <input type="checkbox"/>
