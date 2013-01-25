@@ -1,0 +1,99 @@
+/*!
+*
+* CSSUISwitch
+* http://github.com/excellenteasy/CSSUISwitch
+*
+* Copyright © 2013 Stephan Bönnemann
+* Licensed under the MIT license.
+*
+*/
+/*
+# CSSUISwitch
+From the [Apple docs](http://developer.apple.com/library/ios/#documentation/uikit/reference/UISwitch_Class/Reference/Reference.html):
+> You use the UISwitch class to create and manage the On/Off buttons you see, for example, in the preferences (Settings) for such services as Airplane Mode. These objects are known as switches.
+```
+<div class="input-switch">
+  <input type="checkbox" />
+</div>
+```
+*/
+.input-switch {
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  height: 27px;
+  width: 81px;
+  border: 1px solid #808080;
+  border-radius: 13.5px;
+}
+.input-switch input[type="checkbox"] {
+  position: absolute;
+  display: block;
+  left: -1px;
+  top: -1px;
+  height: 27px;
+  width: 27px;
+  padding: 0;
+  margin: 0;
+  background-image: -webkit-linear-gradient(top, #cccccc, #e7e7e7);
+  border: 1px solid #808080;
+  border-radius: 13.5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.33), inset 0 0 0 1px rgba(255, 255, 255, 0.33);
+  -webkit-appearance: none;
+  -webkit-transition: all 0.2s ease;
+}
+.input-switch input[type="checkbox"]:active:not([disabled]) {
+  background-image: -webkit-linear-gradient(top, #cccccc, #cecece);
+}
+.input-switch input[type="checkbox"]:checked {
+  left: 53px;
+}
+.input-switch input[type="checkbox"]:before,
+.input-switch input[type="checkbox"]:after {
+  position: absolute;
+  z-index: -1;
+  top: -1px;
+  height: 27px;
+  width: 68.5px;
+  font-weight: bold;
+  font-size: 16.2px;
+  line-height: 27px;
+  text-align: center;
+}
+.input-switch input[type="checkbox"]:before {
+  right: 13.5px;
+  color: white;
+  content: 'ON';
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+  background-color: #007fea;
+  background-image: -webkit-linear-gradient(top, transparent, transparent 50%, rgba(255, 255, 255, 0.1) 51%, rgba(255, 255, 255, 0.5));
+  border-top-left-radius: 13.5px;
+  border-bottom-left-radius: 13.5px;
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.33), inset 6.75px 13.5px #007fea;
+}
+.input-switch input[type="checkbox"]:after {
+  left: 13.5px;
+  color: #909090;
+  content: 'OFF';
+  background-color: #eeeeee;
+  background-image: -webkit-linear-gradient(top, transparent, transparent 50%, rgba(255, 255, 255, 0.5) 51%, #ffffff);
+  border-top-right-radius: 13.5px;
+  border-bottom-right-radius: 13.5px;
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.33), inset -6.75px 13.5px #eeeeee;
+}
+.input-switch input[type="checkbox"][disabled] {
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #ffffff);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.input-switch input[type="checkbox"][disabled]:before {
+  background-color: #80bff5;
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.33), inset 6.75px 13.5px #80bff5;
+}
+.input-switch input[type="checkbox"][disabled]:after {
+  color: #c8c8c8;
+  background-color: #f7f7f7;
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.33), inset -6.75px 13.5px #f7f7f7;
+}
