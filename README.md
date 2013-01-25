@@ -5,7 +5,7 @@
 From the [Apple docs](http://developer.apple.com/library/ios/#documentation/uikit/reference/UISwitch_Class/Reference/Reference.html):
 > You use the UISwitch class to create and manage the On/Off buttons you see, for example, in the preferences (Settings) for such services as Airplane Mode. These objects are known as switches.
 
-CSSUISwitch is a recreation of iOS's UISwitch with web technologies for use in web applications.
+CSSUISwitch is a recreation of iOS's UISwitch with web technologies.
 
 * **CSS/LESS only** no image assets, no javascript, retina ready, 2kb
 * **It's just a checkbox** accessibility, works with `:checked`, `[disabled]`
