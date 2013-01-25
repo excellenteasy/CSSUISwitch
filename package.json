@@ -1,0 +1,14 @@
+{
+  "name": "CSSUISwitch",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/excellenteasy/CSSUISwitch.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0rc7",
+    "grunt-contrib-less": "0.5.0rc7",
+    "grunt-contrib-watch": "~0.2.0rc7"
+  },
+  "keywords": ["accessibility", "css", "customizability", "iOS", "LESS", "native", "retina", "switch", "UI", "UISwitch", "User Interface", "UX", "versatility", "web", "front end"]
+}
